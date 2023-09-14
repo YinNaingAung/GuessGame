@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<link rel="stylesheet" href="./guess/style.css">
+<link rel="stylesheet" href="./guess/responsive.css">
+<link rel="icon" href="./guess/Premium Vector _ Quiz symbol neon illustration night isolated design elements.jpg Vector _ Quiz symbol neon illustration night isolated design elements.jpg">
+
+<style>
+   
+</style>
+<body>
+        <main>
+            <!-- container -->
+            <div class="text-ctn">
+                <!-- title start -->
+                <h1 class="head">Let's play the game</h1>
+                <h3 class="head2">The number is  between 1-50</h3>
+                <h3>Can you guess the correct number?</h3>
+                <h4 class="">Show me how lucky you are</h4>
+                <!-- title end-->
+
+                <!-- guess section  -->
+                <div class="box-ctn">
+                    <input type="number" id="guess_num"> 
+                    <button class="btn" onclick="start()" id="guess-btn">Guess</button>
+                </div>
+                <!-- guess section end  -->
+
+                <!-- show result  -->
+                <div class ="hidden_box" id="noti"></div>
+
+                <!-- <p class="mt-5">Your number is too high/ too low</p> -->
+                <p id="meg1"> </p>
+                <p id="meg2">Guessed numbers are :</p>
+                <!-- show result end -->
+
+                <!-- restart btn  -->
+                <div class="btn-ctn">
+                    <button class="btn" onclick="restart()">Restart</button>
+                    <button class="btn" onclick="exit()">Exit</button>
+                </div>
+                <!-- restart btn end  -->
+
+            </div>
+        </main>
+        <script src="./guess/app.js"></script>
+</body>
+</html>
